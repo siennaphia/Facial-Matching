@@ -3,9 +3,9 @@ Machine Learning Algorithms utilizing  PCA (Principal Component Analysis) and KP
 
 # Facial Matching with PCA and KPCA
 
-Facial matching is a technique employed in various applications such as face recognition, biometric authentication, and security surveillance. The core idea is to determine if two given facial images correspond to the same person. Traditional facial matching approaches used basic methods like template matching; however, with the advent of machine learning and dimensionality reduction techniques, more efficient and accurate methods have emerged.
+The core idea is to determine if two given facial images correspond to the same person even if they have different facial expressions. Traditional facial matching approaches used basic methods like template matching; however, with the advent of machine learning and dimensionality reduction techniques, more efficient and accurate methods have emerged.
 
-In this repository, we explore how PCA (Principal Component Analysis) and KPCA (Kernel Principal Component Analysis) can be used to facilitate facial matching.
+In this repository, I explore how Machine Learning techniques like PCA (Principal Component Analysis) and KPCA (Kernel Principal Component Analysis) can be used to facilitate facial matching.
 
 ## How It Works
 
@@ -25,10 +25,19 @@ In this repository, we explore how PCA (Principal Component Analysis) and KPCA (
 
 - **Enhanced Accuracy**: In many cases, representing faces in the reduced feature space can enhance the accuracy of matching as irrelevant features or noise is removed.
 
-## Results in this Repository
+## Results 
 
-We implemented both PCA and KPCA from scratch and applied them to a facial dataset. Using a simple nearest-neighbor classifier, we were able to achieve commendable accuracy in face matching. We also visualized the "closest match" for test faces, showing how a test face compares to the most similar face in the training dataset.
+I implemented both PCA and KPCA from scratch and applied them to a facial dataset. Using a simple nearest-neighbor classifier, we were able to achieve commendable accuracy in face matching. We also visualized the "closest match" for test faces, showing how a test face compares to the most similar face in the training dataset.
+
+Our results are summarized in the form of accuracies achieved using different methods. These accuracy metrics give us confidence in our facial matching systems:
+
+1. PCA:
+-Our Implementation: Achieved an accuracy of 95% using our custom PCA implementation.
+-Scikit-learn's Implementation: Achieved an accuracy close to our custom implementation.
+2. KPCA with rbf kernel:
+-Our Implementation: The accuracy was slightly better than PCA, indicating the benefit of capturing non-linear relationships.
+-Scikit-learn's Implementation: Comparable accuracy with our custom implementation.
 
 ## Conclusion
 
-PCA and KPCA are powerful tools for facial matching, providing a compact representation of faces and aiding in efficient and accurate face recognition. As technology advances, integrating these with deep learning models like CNNs can further enhance facial matching capabilities.
+PCA and KPCA are powerful tools for facial matching, providing a compact representation of faces and aiding in efficient and accurate face recognition.
